@@ -446,15 +446,13 @@
 .section__content {
   padding: 1rem;
   padding-top: 11rem;
-  max-height: 300px;
   position: relative;
   word-wrap: break-word;
 }
 .section__content__title {
   position: absolute;
   top: 0;
-  right: 0px;
-  width: 800px;
+  left: -15rem;
   height: 90px;
   color: #E24413;
   background-color: #fff;
@@ -466,7 +464,6 @@
 .section__content__description {
   font-size: 1.5rem;
   margin-bottom: 5rem;
-  height: 60px;
   color: #333;
 }
 .section__content__button {
@@ -511,7 +508,7 @@
   outline: none;
   margin: 0;
 }
-@media (max-width: 968px) {
+@media (max-width: 1150px) {
   .section {
     grid-template-columns: 1fr;
   }
@@ -529,6 +526,7 @@
     position: relative;
     top: 0;
     right: 0px;
+    left: 0;
     width: 100%;
     height: auto;
     color: #E24413;
@@ -611,13 +609,13 @@
   width: 80%;
 }
 .section-news__new-list__item__content__description {
-  padding: 1rem;
-  font-size: 1.3rem;
   display: grid;
+  font-size: 1.3rem;
+  gap: 1rem;
   align-items: center;
   grid-template-columns: 1fr 100px;
-  gap: 1rem;
   transition: all 0.3s;
+  padding: 1rem;
 }
 .section-news__new-list__item__content__description__button {
   padding: 2rem;

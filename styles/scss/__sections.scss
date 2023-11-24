@@ -23,14 +23,12 @@
     &__content {        
         padding: 1rem;   
         padding-top: 11rem;  
-        max-height: 300px;
         position: relative;  
         word-wrap: break-word;   
         &__title {
             position: absolute;
             top: 0;
-            right: 0px;
-            width: 800px;
+            left: -15rem;
             height: 90px;
             color: #E24413;
             background-color: #fff;
@@ -43,7 +41,6 @@
         &__description {
             font-size: 1.5rem;
             margin-bottom: 5rem;
-            height: 60px;
             color: #333;
         }
 
@@ -95,7 +92,7 @@
     }
 
 
-    @media (max-width:968px) {
+    @media (max-width:1150px) {
         & {
             grid-template-columns:  1fr;
         }
@@ -114,6 +111,7 @@
                 position: relative;
                 top: 0;
                 right: 0px;
+                left: 0;
                 width: 100%;
                 height: auto;
                 color: #E24413;
