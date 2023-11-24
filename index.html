@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Template</title>
+    <link rel="stylesheet" href="styles/css/default.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="header__navbar">
+                <img src="./sources/images/logo.png" alt="logo" class="header__navbar__logo">
+                <div class="header__navbar__navigation">
+                    <div class="header__navbar__navigation__links">
+                        <a href="#"  class="header__navbar__navigation__links__link">Kurumsal</a>
+                        <a href="#"  class="header__navbar__navigation__links__link">Aktiviteler</a>
+                        <a href="#"  class="header__navbar__navigation__links__link">Projeler</a>
+                        <a href="#"  class="header__navbar__navigation__links__link">İnsan Kaynakları</a>
+                        <a href="#"  class="header__navbar__navigation__links__link">İletişim</a>
+                    </div>
+                    <div class="header__navbar__navigation__language">
+                        <img src="sources/images/language-icon.png" alt="language-icon" class="header__navbar__navigation__language__icon">
+                        <select class="header__navbar__navigation__language__select" name="language" id="language">
+                            <option value="TR">TR</option>
+                            <option value="EN">EN</option>
+                        </select>
+                    </div>
+                </div>
+            </nav>
+            <section class="header__content-slider">
+                <div class="header__content-slider__controller">
+                    <img src="sources/images/left-slider-icon.png" alt="left-button-icon" class="header__content-slider__controller__image">
+                    <img src="sources/images/right-slider-icon.png" alt="right-button-icon" class="header__content-slider__controller__image">
+                </div>
+                <div class="header__content-slider__slide">
+                    <div class="header__content-slider__slide__content">
+                        <h1 class="header__content-slider__slide__content__title">Geleceğin İnşaası, Çevre Dostu Adımlar</h1>
+                        <p  class="header__content-slider__slide__content__description">
+                            Sürdürülebilirlik ilkesini benimseyerek, çevre dostu inşaat adımlarıyla geleceği inşa ediyoruz.
+                        </p>
+                        <div>
+                            <a href="#" class="header__content-slider__slide__content__button">Projelerimiz ></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </header>
+
+    <div class="container">
+        <section class="section">
+            <img class="section__image" src="sources/images/section-1.png" alt="section image">
+            <div class="section__content">
+                <h3 class="section__content__title">Geçmişten Geleceğe İnşa Gücü: <b>1996'dan Beri</b></h3>
+                <p class="section__content__description">1996 yılında İstanbul/Türkiye'de kurulan Firma Yapı, uluslararası inşaat sektöründe kısa sürede saygın bir yer edinmiştir. </p>
+                <p class="section__content__description">Geçmişten bugüne uzanan köklü deneyimi ve gelecek odaklı yaklaşımıyla, müşterilerimize en yüksek kalitede hizmet sunmaya ve çevreye değer katmaya adanmış bir yapı şirketiyiz.</p>
+                <a href="#" class="section__content__button">Bizi Tanıyın ></a>
+            </div>
+        </section>
+
+        <section class="section">
+            <img class="section__right-arrow-img" src="sources/images/right-arrow.png" alt="">
+            <div class="section__features">
+                <div class="section__features__feature">
+                    <h6 class="section__features__feature__title">+23</h6>
+                    <p class="section__features__feature__description">
+                        Yılların Tecrübesi
+                    </p>
+                </div>
+
+                <div class="section__features__feature">
+                    <h6 class="section__features__feature__title">3 Kıta</h6>
+                    <p class="section__features__feature__description">
+                        15 Ülke
+                    </p>
+                </div>
+
+                <div class="section__features__feature">
+                    <h6 class="section__features__feature__title">%80</h6>
+                    <p class="section__features__feature__description">
+                        Uluslar Arası Projeler
+                    </p>
+                </div>
+            </div>
+            <img class="section__image" src="sources/images/section-2.png" alt="section image">
+        </section>        
+    </div>
+
+    <!-- Slider 2 -->
+    <section class="project-slider">
+        <div class="project-slider__current-slide-image-box"></div>
+        <div class="project-slider__two-row">
+            <div class="project-slider__current-slide-content">
+                <h4 class="project-slider__current-slide-content__title">Firma Yapı Projeleri</h4>
+                <div class="project-slider__current-slide-content__controller">
+                    <img id="project-slider-left" src="sources/images/left-slider-white-icon.png" alt="left-button-icon" class="project-slider__current-slide-content__controller__image">
+                    <img id="project-slider-right" src="sources/images/right-slider-icon.png" alt="right-button-icon" class="project-slider__current-slide-content__controller__image">
+                </div>
+                <h3 id="current-project-title" class="project-slider__current-slide-content__slide-title">
+                    Radisson Blu Hotel, Havaalanı Abidjan 
+                </h3>
+                <p id="current-project-description" class="project-slider__current-slide-content__description">
+                    Bu proje Abidjan, Fildişi Sahili'nde yer almaktadır. 261 oda ve Genel Alanlar dahil olmak üzere 31.000 m2'lik binanın beton ve MEP işleri hariç tüm ticari işleri.
+                </p>
+                <div class="project-slider__current-slide-content__buttons">
+                    <a href="#" class="project-slider__current-slide-content__buttons__orange-btn">İncele ></a>
+                    <a href="#" class="project-slider__current-slide-content__buttons__dark-btn">Tüm Projeler ></a>
+                </div>
+            </div>
+    
+            <div id="project-slider" class="project-slider__slides">
+                <div class="project-slider__slides__slide active">
+                    <img class="project-slider__slides__slide__image" src="sources/images/slider-2.png" alt="">
+                    <h6 class="project-slider__slides__slide__title">Marriott Hotel Kapadokya Nevşehir asdasdasdasdasdasd</h6>
+                </div>
+            </div>        
+        </div>
+    </section>
+
+
+    <div class="container">
+        <section class="section-ahsap-project">
+            <img src="sources/images/arrow-bottom.png" class="section-ahsap-project__arrow-image" alt="">
+            <div class="section-ahsap-project__item">
+                <div>
+                    <img class="section-ahsap-project__item__logo" src="sources/images/ahsap-logo.png" alt="">
+                    <a href="#" class="section-ahsap-project__item__link"><img src="sources/images/ahsap-public-icon.png" alt="public icon">Websitesini Ziyaret Et</a>
+                </div>
+                <div class="section-ahsap-project__item__content" >
+                    <h6 class="section-ahsap-project__item__content__title">Körfez</h6>
+                    <p class="section-ahsap-project__item__content__description">
+                        1982 yılında kurulan AHŞAP Ürün Sanayi A.Ş. iç dekorasyon taahhüt firmasıdır. İstanbul'daki fabrikamız bünyesinde özel imalat sabit ve hareketli mobilya, dekoratif aydınlatma, cam ve ahşap işleri yapmaktayız.
+                    </p>
+                </div>
+            </div>
+            <div class="section-ahsap-project__item">
+                <div class="section-ahsap-project__item__content" >
+                    <h6 class="section-ahsap-project__item__content__title orange">Ahşap</h6>
+                    <p class="section-ahsap-project__item__content__description">
+                        1982 yılında kurulan AHŞAP Ürün Sanayi A.Ş. iç dekorasyon taahhüt firmasıdır. İstanbul'daki fabrikamız bünyesinde özel imalat sabit ve hareketli mobilya, dekoratif aydınlatma, cam ve ahşap işleri yapmaktayız.
+                    </p>
+                </div>
+                <div>
+                    <img class="section-ahsap-project__item__logo" src="sources/images/korfez-logo.png" alt="">
+                </div>
+            </div>
+            <p class="section-ahsap-project__description-item">
+                İlerlemenin Gücü, Şirketler Grubuyla Bir Adım Önde
+            </p>
+        </section>
+
+        <section class="section-news">
+            <header class="section-news__header">
+                <h6 class="section-news__header__title">Bizden Haberler</h6>
+                <a class="section-news__header__button" href="#">Tümünü Gör ></a>
+            </header>
+            <div class="section-news__new-list">
+                <div class="section-news__new-list__item">
+                    <img class="section-news__new-list__item__image" src="sources/images/news-1.png" alt="">
+                    <div class="section-news__new-list__item__content">
+                        <p class="section-news__new-list__item__content__description">
+                            Mimari Harikalar: Dünyanın En Etkileyici İnşaat Projeleri Ve Yapıları
+                            <a href="#" class="section-news__new-list__item__content__description__button">İncele ></a>
+                        </p>
+                    </div>
+                </div>
+                <div class="section-news__new-list__item">
+                    <img class="section-news__new-list__item__image" src="sources/images/news-2.png" alt="">
+                    <div class="section-news__new-list__item__content">
+                        <p class="section-news__new-list__item__content__description">
+                            Mimari Harikalar: Dünyanın En Etkileyici İnşaat Projeleri Ve Yapıları
+                            <a href="#" class="section-news__new-list__item__content__description__button">İncele ></a>
+                        </p>
+                    </div>
+                </div>
+                <div class="section-news__new-list__item">
+                    <img class="section-news__new-list__item__image" src="sources/images/news-3.png" alt="">
+                    <div class="section-news__new-list__item__content">
+                        <p class="section-news__new-list__item__content__description">
+                            Mimari Harikalar: Dünyanın En Etkileyici İnşaat Projeleri Ve Yapıları
+                            <a href="#" class="section-news__new-list__item__content__description__button">İncele ></a>
+                        </p>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+    </div>
+
+    <section class="section-referances">
+        <div class="container">
+            <div class="section-referances__box">
+                <div class="section-referances__box__items">
+                    <div class="section-referances__box__items__item">
+                        <img class="section-referances__box__items__item__image" src="sources/images/iso-logo.png" alt="iso logo">
+                        <p class="section-referances__box__items__item__text">9001:2015</p>
+                    </div>
+                    <div class="section-referances__box__items__item">
+                        <img class="section-referances__box__items__item__image" src="sources/images/iso-logo.png" alt="iso logo">
+                        <p class="section-referances__box__items__item__text">9001:2015</p>
+                    </div>
+                    <div class="section-referances__box__items__item">
+                        <img class="section-referances__box__items__item__image" src="sources/images/iso-logo.png" alt="iso logo">
+                        <p class="section-referances__box__items__item__text">9001:2015</p>
+                    </div>
+                </div>    
+                <h6 class="section-referances__box__content-title">Kalitede Belgeli, Güvenle İnşa Ediyoruz</h6>            
+            </div>
+        </div>
+        <img class="section-referances__left-arrow" src="sources/images/arrow-left.png" alt="">
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__box-list">
+                <div class="footer__box-list__item">
+                    <h6 class="footer__box-list__item__title">Kurumsal</h6>
+                    <div class="footer__box-list__item__links">
+                        <a href="" class="footer__box-list__item__links__link">Hakkımızda</a>
+                        <a href="" class="footer__box-list__item__links__link">Misyon Vizyon</a>
+                        <a href="" class="footer__box-list__item__links__link">Multipurpose Fields</a>
+                        <a href="" class="footer__box-list__item__links__link">Tennis Courts</a>
+                    </div>
+                </div>
+                <div class="footer__box-list__item">
+                    <h6 class="footer__box-list__item__title">Projeler</h6>
+                    <div class="footer__box-list__item__links">
+                        <a href="" class="footer__box-list__item__links__link">Radisson Blu Hotel</a>
+                        <a href="" class="footer__box-list__item__links__link">Marriott Hotel Kapadokya</a>
+                        <a href="" class="footer__box-list__item__links__link">Mangane Apart Rezidans</a>
+                        <a href="" class="footer__box-list__item__links__link">Marriott Hotel Kapadokya</a>
+                    </div>
+                </div>
+                <div class="footer__box-list__item">
+                    <!-- logo gelecek -->
+                    <img class="footer__box-list__item__logo" src="sources/images/logo.png" alt="">
+                    <div class="footer__box-list__item__social-icons">
+                        <a href="" class="footer__box-list__item__social-icons__link">
+                            <img src="sources/images/facebook.png" alt="facebook">
+                        </a>
+                        <a href="" class="footer__box-list__item__social-icons__link">
+                            <img src="sources/images/youtube.png" alt="youtube">
+                        </a>
+                        <a href="" class="footer__box-list__item__social-icons__link">
+                            <img src="sources/images/linkedin.png" alt="linkedin">
+                        </a>
+                        <a href="" class="footer__box-list__item__social-icons__link">
+                            <img src="sources/images/x.png" alt="X">
+                        </a>
+                    </div>
+                </div>
+                <div class="footer__box-list__item">
+                    <h6 class="footer__box-list__item__title">Aktiviteler</h6>
+                    <div class="footer__box-list__item__links">
+                        <a href="" class="footer__box-list__item__links__link">Kategori 1</a>
+                        <a href="" class="footer__box-list__item__links__link">Kategori 2</a>
+                        <a href="" class="footer__box-list__item__links__link">Kategori 3</a>
+                        <a href="" class="footer__box-list__item__links__link">Kategori 4</a>
+                    </div>
+                </div>
+                <div class="footer__box-list__item">
+                    <h6 class="footer__box-list__item__title">Politikalar</h6>
+                    <div class="footer__box-list__item__links">
+                        <a href="" class="footer__box-list__item__links__link">Kalite Politikamız</a>
+                        <a href="" class="footer__box-list__item__links__link">Gizlilik Politikamız</a>
+                        <a href="" class="footer__box-list__item__links__link">Aydınlatma Metni</a>
+                        <a href="" class="footer__box-list__item__links__link">KVKK</a>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="footer__line"></div>
+    
+            <div class="footer__box-list">
+                <div class="footer__box-list__item">
+                    <h6 class="footer__box-list__item__title">Merkez Ofis</h6>
+                    <div class="footer__box-list__item__links">
+                        <a href="" class="footer__box-list__item__links__link"> 
+                            <img src="sources/images/phone-icon.png" alt="">
+                            +90 (216) 455 55 55
+                        </a>
+                        <a href="" class="footer__box-list__item__links__link">
+                            <img src="sources/images/mail-icon.png" alt="">
+                            info@mail.com
+                        </a>
+                        <a href="" class="footer__box-list__item__links__link">
+                            <img src="sources/images/location-icon.png" alt="">
+                            Orta Mah. Kartal/İstanbul
+                        </a>
+                    </div>
+                </div>
+                <div class="footer__box-list__item">
+                    <h6 class="footer__box-list__item__title">Benin Ofisi</h6>
+                    <div class="footer__box-list__item__links">
+                        <a href="" class="footer__box-list__item__links__link"> 
+                            <img src="sources/images/phone-icon.png" alt="">
+                            +90 (216) 455 55 55
+                        </a>
+                        <a href="" class="footer__box-list__item__links__link">
+                            <img src="sources/images/mail-icon.png" alt="">
+                            info@mail.com
+                        </a>
+                        <a href="" class="footer__box-list__item__links__link">
+                            <img src="sources/images/location-icon.png" alt="">
+                            Orta Mah. Kartal/İstanbul
+                        </a>
+                    </div>
+                </div>
+                <div class="footer__box-list__item">
+                    <h6 class="footer__box-list__item__title">Mali Ofisi</h6>
+                    <div class="footer__box-list__item__links">
+                        <a href="" class="footer__box-list__item__links__link"> 
+                            <img src="sources/images/phone-icon.png" alt="">
+                            +90 (216) 455 55 55
+                        </a>
+                        <a href="" class="footer__box-list__item__links__link">
+                            <img src="sources/images/mail-icon.png" alt="">
+                            info@mail.com
+                        </a>
+                        <a href="" class="footer__box-list__item__links__link">
+                            <img src="sources/images/location-icon.png" alt="">
+                            Orta Mah. Kartal/İstanbul
+                        </a>
+                    </div>
+                </div>
+                <div class="footer__box-list__item">
+                    <h6 class="footer__box-list__item__title">Katar Ofisi</h6>
+                    <div class="footer__box-list__item__links">
+                        <a href="" class="footer__box-list__item__links__link"> 
+                            <img src="sources/images/phone-icon.png" alt="">
+                            +90 (216) 455 55 55
+                        </a>
+                        <a href="" class="footer__box-list__item__links__link">
+                            <img src="sources/images/mail-icon.png" alt="">
+                            info@mail.com
+                        </a>
+                        <a href="" class="footer__box-list__item__links__link">
+                            <img src="sources/images/location-icon.png" alt="">
+                            Orta Mah. Kartal/İstanbul
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <p>&copy; 2023 firma.com | Tüm Hakları Saklıdır.</p>
+        </div>
+    </footer>
+
+
+    <script src="js/project-slider.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+@import "__header.scss";
+@import "__project-slider.scss";
+@import "__sections.scss";
+@import "__news.scss";
+@import "__footer.scss";
+@import "__referances.scss";
+@import "__ahsap-project.scss";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins;
+}
+
+html {
+    font-size: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+ul,ol {
+    list-style-type: none;
+}
+
+p {
+    margin: 1rem;
+}
+
+.container {
+    width:90vw;
+    margin: auto;
+}
+
+@media (max-width:900px) {
+    .container {
+        width: 100%;
+    }
+}
