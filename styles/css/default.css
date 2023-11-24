@@ -445,8 +445,10 @@
 }
 .section__content {
   padding: 1rem;
-  padding-top: 10rem;
+  padding-top: 11rem;
+  max-height: 300px;
   position: relative;
+  word-wrap: break-word;
 }
 .section__content__title {
   position: absolute;
@@ -462,8 +464,9 @@
   font-size: 4rem;
 }
 .section__content__description {
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin-bottom: 5rem;
+  height: 60px;
   color: #333;
 }
 .section__content__button {
@@ -474,6 +477,7 @@
   color: #E24413;
   cursor: pointer;
   margin-left: 1rem;
+  font-size: 1.5rem;
 }
 .section__features {
   padding-top: 3rem;
@@ -573,6 +577,7 @@
   justify-content: space-between;
   padding: 2rem 0;
   padding-right: 3rem;
+  align-items: center;
 }
 .section-news__header__title {
   font-size: 3rem;
@@ -974,6 +979,11 @@ p {
 @media (max-width: 900px) {
   .container {
     width: 100%;
+  }
+}
+@media (min-width: 1500px) {
+  html {
+    font-size: 10px;
   }
 }
 

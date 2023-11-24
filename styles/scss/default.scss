@@ -40,3 +40,9 @@ p {
         width: 100%;
     }
 }
+
+@media (min-width:1500px) {
+     html {
+        font-size: 10px;
+    }
+}
