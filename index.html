@@ -5,13 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Task Template</title>
     <link rel="stylesheet" href="styles/css/default.css">
+    <!-- FontAwesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <header class="header">
+    <header class="header"> 
         <div class="container">
             <nav class="header__navbar">
+                <div id="menu-btn" class="header__navbar__menu"><i class="fas fa-bars"></i></div>
                 <img src="./sources/images/logo.png" alt="logo" class="header__navbar__logo">
-                <div class="header__navbar__navigation">
+                <div id="navigation" class="header__navbar__navigation">
                     <div class="header__navbar__navigation__links">
                         <a href="#"  class="header__navbar__navigation__links__link">Kurumsal</a>
                         <a href="#"  class="header__navbar__navigation__links__link">Aktiviteler</a>
@@ -27,7 +30,7 @@
                         </select>
                     </div>
                 </div>
-            </nav>
+            </nav> 
             <section class="header__content-slider">
                 <div class="header__content-slider__controller">
                     <img src="sources/images/left-slider-icon.png" alt="left-button-icon" class="header__content-slider__controller__image">
@@ -110,10 +113,7 @@
             </div>
     
             <div id="project-slider" class="project-slider__slides">
-                <div class="project-slider__slides__slide active">
-                    <img class="project-slider__slides__slide__image" src="sources/images/slider-2.png" alt="">
-                    <h6 class="project-slider__slides__slide__title">Marriott Hotel Kapadokya Nevşehir asdasdasdasdasdasd</h6>
-                </div>
+                <!-- Javascript tarafından elementler içerisine eklenecektir. -->
             </div>        
         </div>
     </section>
@@ -349,5 +349,6 @@
 
 
     <script src="js/project-slider.js"></script>
+    <script src="js/navbar.js"></script>
 </body>
 </html>
