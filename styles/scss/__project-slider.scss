@@ -5,23 +5,24 @@
     margin-top: 2rem;
     z-index: 2;
     display: grid;
-    grid-template-columns: 650px 1fr;
+    grid-template-columns: 65rem 1fr;
     gap: 3rem;
     padding: 5rem;
 
     &::after {
         width: 55rem;
-        height: 300px;
+        height: 30rem;
         content: "";
         background-color: #E24413;
         position: absolute;
-        bottom: 0px;
+        bottom: 0;
         z-index: -1;
     }
 
 
     &__current-slide-image-box {
-        height: 600px;
+        width: 56.8rem;
+        height: 60rem;
         background-color: rgba(245, 238, 238, 0.322);        
     }
 
@@ -39,10 +40,10 @@
         gap: 1rem;
         margin-top: auto;
         transition: scroll 1s;
-            height: 250px;
+            height: 25rem;
             &__slide {
-            height: 250px;
-            min-width: 400px;
+            height: 25rem;
+            min-width: 40rem;
             position: relative;            
 
             &.active {
@@ -57,9 +58,9 @@
                         position: absolute;
                         top: 5rem;
                         left: 5rem;
-                        width: 650px;
+                        width: 56.8rem;
                         z-index: 999;
-                        height: 600px;
+                        height: 60rem;
                     }
                 }
 
@@ -69,7 +70,7 @@
 
             &__title {
                 position: absolute;
-                bottom: 0px;
+                bottom: 0;
                 background-color: #000;
                 color: #fff;
                 padding-bottom: 2rem;
@@ -121,17 +122,18 @@
 
         &__slide-title {
             font-size: 3rem;
-            width: 300px;
+            width: 30rem;
         }
 
         &__description {
             color: #fff;
             padding: 0;
             margin: 0;
-            width: 400px;
+            width: 40rem;
         }
 
         &__buttons {
+            font-size: 1.3rem;
             margin-top: 3rem;
             &__orange-btn {
                 background: #E24413;
@@ -140,7 +142,7 @@
             }
 
             &__dark-btn {
-                border: 1px solid #ffffff6b;
+                border: .1rem solid #ffffff6b;
                 color: #fff;
                 padding: 1rem 2rem;
             }
@@ -164,11 +166,11 @@
         
         &::after {
             width: 35rem;
-            height: 300px;
+            height: 30rem;
             content: "";
             background-color: #E24413;
             position: absolute;
-            bottom: 0px;
+            bottom: 0;
             z-index: -1;
         }
 
@@ -216,11 +218,11 @@
                     }
                     to {
                         position: absolute;
-                        top: 0px;
-                        left: 0px;
+                        top: 0;
+                        left: 0;
                         width: 100%;
                         z-index: 999;
-                        height: 568px;
+                        height: 56.8rem;
                     }
                 }
 
@@ -229,15 +231,15 @@
             }
 
             &__slide {
-                min-width: 150px;
-                height: 250px;
+                min-width: 15rem;
+                height: 25rem;
             }
         }
         
 
         &__current-slide-image-box {
-            max-width: 0px;
-            height: 568px;
+            max-width: 0;
+            height: 56.8rem;
             right: 0;
             background-color: rgba(245, 238, 238, 0);
         }

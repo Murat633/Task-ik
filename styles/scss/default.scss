@@ -14,7 +14,7 @@
 }
 
 html {
-    font-size: 10px ; 
+    font-size: 10px;
 }
 
 a {
@@ -41,8 +41,34 @@ p {
     }
 }
 
-@media (min-width:1500px) {
-     html {
-        font-size: 10px;
+
+@media (min-width:1550px) {
+    html {
+        font-size: 12px;
     }
 }
+
+@media (min-width:1700px) {
+    html {
+        font-size: 14px;
+    }
+}
+
+@media (min-width:2300px) {
+    html {
+        font-size: 15px;
+    }
+}
+
+@media (min-width:2800px) {
+    html {
+        font-size: 15px;
+    }
+}
+
+@media (min-width:2900px) {
+    html {
+        font-size: 35px;
+    }
+}
+

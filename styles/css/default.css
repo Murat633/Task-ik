@@ -1,6 +1,6 @@
 .header {
   width: 100%;
-  height: 100vh;
+  height: 70rem;
   position: relative;
   overflow: hidden;
   margin-bottom: 5rem;
@@ -39,7 +39,7 @@
 .header__navbar__navigation__links {
   padding: 0.3rem;
   padding-right: 1rem;
-  border-right: 1px solid #fff;
+  border-right: 0.1rem solid #fff;
 }
 .header__navbar__navigation__links__link {
   color: #fff;
@@ -49,7 +49,12 @@
 .header__navbar__navigation__language {
   display: flex;
 }
+.header__navbar__navigation__language__icon {
+  width: 1.5rem;
+  height: 1.5rem;
+}
 .header__navbar__navigation__language__select {
+  font-size: 1.5rem;
   background-color: transparent;
   border: none;
   outline: none;
@@ -63,7 +68,7 @@
 .header__content-slider {
   padding: 5rem;
   width: 100%;
-  height: 80vh;
+  height: 63rem;
   background: #000;
   background-image: url(../../sources/images/header-bg.png);
   background-size: cover;
@@ -109,6 +114,7 @@
 }
 .header__content-slider__slide__content__button {
   display: inline-block;
+  font-size: 1.3rem;
   color: #fff;
   padding: 1rem;
   background: #E24413;
@@ -127,7 +133,7 @@
   }
   .header__navbar__navigation {
     position: absolute;
-    top: 71px;
+    top: 7.1rem;
     background-color: #E24413;
     left: 0;
     flex-direction: column;
@@ -140,14 +146,14 @@
   }
   .header__navbar__navigation.active {
     transition: all 0.3s;
-    height: 250px;
+    height: 25rem;
   }
   .header__navbar__navigation__links {
     width: 100%;
     display: flex;
     flex-direction: column;
     border-right: none;
-    border-bottom: 1px solid #fff;
+    border-bottom: 0.1rem solid #fff;
   }
   .header__navbar__navigation__links__link {
     color: #fff;
@@ -156,6 +162,7 @@
   }
   .header__navbar__navigation__language {
     display: flex;
+    align-items: center;
   }
   .header__navbar__navigation__language__select {
     background-color: transparent;
@@ -171,7 +178,7 @@
 }
 @media (max-width: 900px) {
   .header {
-    height: 48vh;
+    height: 4.8rem;
   }
   .header::after {
     content: "";
@@ -187,7 +194,7 @@
   .header__content-slider {
     padding: 0rem;
     width: 100;
-    height: 40vh;
+    height: 4rem;
     margin: 0;
     background: #000;
     background-image: url(../../sources/images/header-bg.png);
@@ -209,7 +216,7 @@
   .header__content-slider__slide__content__button {
     display: inline-block;
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.3rem;
   }
 }
 
@@ -220,21 +227,22 @@
   margin-top: 2rem;
   z-index: 2;
   display: grid;
-  grid-template-columns: 650px 1fr;
+  grid-template-columns: 65rem 1fr;
   gap: 3rem;
   padding: 5rem;
 }
 .project-slider::after {
   width: 55rem;
-  height: 300px;
+  height: 30rem;
   content: "";
   background-color: #E24413;
   position: absolute;
-  bottom: 0px;
+  bottom: 0;
   z-index: -1;
 }
 .project-slider__current-slide-image-box {
-  height: 600px;
+  width: 56.8rem;
+  height: 60rem;
   background-color: rgba(245, 238, 238, 0.322);
 }
 .project-slider__two-row {
@@ -250,11 +258,11 @@
   gap: 1rem;
   margin-top: auto;
   transition: scroll 1s;
-  height: 250px;
+  height: 25rem;
 }
 .project-slider__slides__slide {
-  height: 250px;
-  min-width: 400px;
+  height: 25rem;
+  min-width: 40rem;
   position: relative;
 }
 .project-slider__slides__slide.active {
@@ -272,14 +280,14 @@
     position: absolute;
     top: 5rem;
     left: 5rem;
-    width: 650px;
+    width: 56.8rem;
     z-index: 999;
-    height: 600px;
+    height: 60rem;
   }
 }
 .project-slider__slides__slide__title {
   position: absolute;
-  bottom: 0px;
+  bottom: 0;
   background-color: #000;
   color: #fff;
   padding-bottom: 2rem;
@@ -323,15 +331,16 @@
 }
 .project-slider__current-slide-content__slide-title {
   font-size: 3rem;
-  width: 300px;
+  width: 30rem;
 }
 .project-slider__current-slide-content__description {
   color: #fff;
   padding: 0;
   margin: 0;
-  width: 400px;
+  width: 40rem;
 }
 .project-slider__current-slide-content__buttons {
+  font-size: 1.3rem;
   margin-top: 3rem;
 }
 .project-slider__current-slide-content__buttons__orange-btn {
@@ -340,7 +349,7 @@
   padding: 1rem 2rem;
 }
 .project-slider__current-slide-content__buttons__dark-btn {
-  border: 1px solid rgba(255, 255, 255, 0.4196078431);
+  border: 0.1rem solid rgba(255, 255, 255, 0.4196078431);
   color: #fff;
   padding: 1rem 2rem;
 }
@@ -358,11 +367,11 @@
   }
   .project-slider::after {
     width: 35rem;
-    height: 300px;
+    height: 30rem;
     content: "";
     background-color: #E24413;
     position: absolute;
-    bottom: 0px;
+    bottom: 0;
     z-index: -1;
   }
   .project-slider__current-slide-content {
@@ -404,20 +413,20 @@
     }
     to {
       position: absolute;
-      top: 0px;
-      left: 0px;
+      top: 0;
+      left: 0;
       width: 100%;
       z-index: 999;
-      height: 568px;
+      height: 56.8rem;
     }
   }
   .project-slider__slides__slide {
-    min-width: 150px;
-    height: 250px;
+    min-width: 15rem;
+    height: 25rem;
   }
   .project-slider__current-slide-image-box {
-    max-width: 0px;
-    height: 568px;
+    max-width: 0;
+    height: 56.8rem;
     right: 0;
     background-color: rgba(245, 238, 238, 0);
   }
@@ -427,7 +436,7 @@
   display: grid;
   justify-content: space-between;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 400px;
+  grid-template-rows: 40rem;
   position: relative;
 }
 .section__image {
@@ -453,7 +462,7 @@
   position: absolute;
   top: 0;
   left: -15rem;
-  height: 90px;
+  height: 9rem;
   color: #E24413;
   background-color: #fff;
   padding: 1rem 0;
@@ -470,11 +479,11 @@
   border: none;
   outline: none;
   padding: 1rem;
-  border: 1px solid #E24413;
+  border: 0.1rem solid #E24413;
   color: #E24413;
   cursor: pointer;
   margin-left: 1rem;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 .section__features {
   padding-top: 3rem;
@@ -490,7 +499,7 @@
   font-size: 2rem;
   display: inline-block;
   text-align: start;
-  width: 250px;
+  width: 25rem;
   margin-left: auto;
   color: #333;
   line-height: 1.5;
@@ -525,7 +534,7 @@
   .section__content__title {
     position: relative;
     top: 0;
-    right: 0px;
+    right: 0;
     left: 0;
     width: 100%;
     height: auto;
@@ -544,9 +553,10 @@
     border: none;
     outline: none;
     padding: 1rem;
-    border: 1px solid #E24413;
+    border: 0.1rem solid #E24413;
     color: #E24413;
     cursor: pointer;
+    font-size: 1.5rem;
     margin-left: 1rem;
   }
   .section__features {
@@ -582,7 +592,8 @@
   color: #E24413;
 }
 .section-news__header__button {
-  border: 1px solid #E24413;
+  border: 0.1rem solid #E24413;
+  font-size: 1.3rem;
   padding: 1rem 2rem;
   color: #E24413;
 }
@@ -594,7 +605,7 @@
   gap: 3rem;
 }
 .section-news__new-list__item {
-  height: 350px;
+  height: 35rem;
   position: relative;
 }
 .section-news__new-list__item__image {
@@ -603,8 +614,8 @@
 }
 .section-news__new-list__item__content {
   position: absolute;
-  bottom: -20px;
-  left: -5px;
+  bottom: -2rem;
+  left: -0.5rem;
   background-color: #fff;
   width: 80%;
 }
@@ -613,11 +624,12 @@
   font-size: 1.3rem;
   gap: 1rem;
   align-items: center;
-  grid-template-columns: 1fr 100px;
+  grid-template-columns: 1fr 10rem;
   transition: all 0.3s;
   padding: 1rem;
 }
 .section-news__new-list__item__content__description__button {
+  font-size: 1.3rem;
   padding: 2rem;
   text-align: center;
   background-color: rgba(255, 255, 255, 0.3568627451);
@@ -627,6 +639,7 @@
   color: #fff;
 }
 .section-news__new-list__item__content:hover .section-news__new-list__item__content__description__button {
+  font-size: 1.3rem;
   color: #fff;
 }
 @media (max-width: 1200px) {
@@ -671,8 +684,8 @@
   gap: 2rem;
 }
 .footer__box-list__item__logo {
-  width: 100px;
-  height: 100px;
+  width: 10rem;
+  height: 10rem;
   margin: auto;
 }
 .footer__box-list__item__title {
@@ -705,14 +718,14 @@
   align-items: center;
   justify-content: center;
   background-color: #2E2E2E;
-  width: 30px;
-  height: 30px;
+  width: 3rem;
+  height: 3rem;
   text-align: center;
 }
 .footer__line {
   display: block;
   width: 100%;
-  height: 1px;
+  height: 0.1rem;
   background-color: rgba(51, 51, 51, 0.4862745098);
 }
 @media (max-width: 900px) {
@@ -744,7 +757,7 @@
 .section-referances__left-arrow {
   position: absolute;
   right: 0;
-  height: 150px;
+  height: 15rem;
 }
 .section-referances__box {
   display: flex;
@@ -755,7 +768,7 @@
 .section-referances__box__content-title {
   font-size: 4rem;
   color: #E24413;
-  width: 400px;
+  width: 40rem;
   text-align: end;
 }
 .section-referances__box__items {
@@ -772,7 +785,7 @@
   align-items: center;
   justify-content: center;
   padding: 1rem;
-  border: 1px solid rgba(255, 255, 255, 0.2470588235);
+  border: 0.1rem solid rgba(255, 255, 255, 0.2470588235);
   cursor: default;
 }
 .section-referances__box__items__item:nth-child(1) {
@@ -808,7 +821,7 @@
     align-items: center;
     justify-content: center;
     padding: 1rem;
-    border: 1px solid rgba(255, 255, 255, 0.2470588235);
+    border: 0.1rem solid rgba(255, 255, 255, 0.2470588235);
     cursor: default;
   }
   .section-referances__box__items__item:nth-child(1) {
@@ -843,7 +856,7 @@
     align-items: center;
     justify-content: center;
     padding: 1rem;
-    border: 1px solid rgba(255, 255, 255, 0.2470588235);
+    border: 0.1rem solid rgba(255, 255, 255, 0.2470588235);
     cursor: default;
   }
   .section-referances__box__items__item:nth-child(1) {
@@ -874,7 +887,7 @@
   width: 100%;
 }
 .section-ahsap-project__item__logo {
-  width: 150px;
+  width: 15rem;
   margin: auto;
 }
 .section-ahsap-project__item div {
@@ -898,7 +911,7 @@
   color: #E24413;
 }
 .section-ahsap-project__item__content__description {
-  width: 300px;
+  width: 30rem;
   margin: auto;
   margin: 0;
   text-align: left;
@@ -907,7 +920,7 @@
 }
 .section-ahsap-project__item__link {
   padding: 1rem 5rem;
-  border: 1px solid #E24413;
+  border: 0.1rem solid #E24413;
   width: 100%;
   display: block;
   color: #E24413;
@@ -929,15 +942,15 @@
 .section-ahsap-project__arrow-image {
   position: absolute;
   top: 0;
-  right: 150px;
-  height: 150px;
+  right: 15rem;
+  height: 15rem;
 }
 @media (max-width: 1000px) {
   .section-ahsap-project__arrow-image {
     position: absolute;
     top: -15rem;
-    right: 150px;
-    height: 150px;
+    right: 15rem;
+    height: 15rem;
   }
   .section-ahsap-project {
     grid-template-columns: 1fr;
@@ -979,9 +992,29 @@ p {
     width: 100%;
   }
 }
-@media (min-width: 1500px) {
+@media (min-width: 1550px) {
   html {
-    font-size: 10px;
+    font-size: 12px;
+  }
+}
+@media (min-width: 1700px) {
+  html {
+    font-size: 14px;
+  }
+}
+@media (min-width: 2300px) {
+  html {
+    font-size: 15px;
+  }
+}
+@media (min-width: 2800px) {
+  html {
+    font-size: 15px;
+  }
+}
+@media (min-width: 2900px) {
+  html {
+    font-size: 35px;
   }
 }
 

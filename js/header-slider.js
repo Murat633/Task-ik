@@ -1,14 +1,14 @@
-const leftBtn = document.getElementById("project-slider-left")
-const rightBtn = document.getElementById("project-slider-right")
-const currentTitleElement = document.getElementById("current-project-title")
-const currentDescriptionElement = document.getElementById("current-project-description")
-const slideList = document.getElementById("project-slider")
+const leftBtn = document.getElementById("header-slider-left")
+const rightBtn = document.getElementById("header-slider-right")
+const currentTitleElement = document.getElementById("current-header-title")
+const currentDescriptionElement = document.getElementById("current-header-description")
+const slideList = document.getElementById("header-slider")
 
-const projects = [
+const slides = [
     {
         index:1, 
-        title:"Test Proje 1",
-        description:"Bu proje Abidjan, Fildişi Sahili'nde yer almaktadır. 261 oda ve Genel Alanlar dahil olmak üzere 31.000 m2'lik binanın beton ve MEP işleri hariç tüm ticari işleri 1",
+        title:"Geleceğin İnşaası, Çevre Dostu Adımlar",
+        description:"Sürdürülebilirlik ilkesini benimseyerek, çevre dostu inşaat adımlarıyla geleceği inşa ediyoruz.",
         imageUrl:"https://images.pexels.com/photos/269077/pexels-photo-269077.jpeg?cs=srgb&dl=pexels-pixabay-269077.jpg&fm=jpg"
     },{
         index:2,
@@ -32,9 +32,9 @@ var currentElementIndex = 0
 
 const slideCreator = (slide,index)=>{
     const slideTag =  `
-        <div data-index="${index}" class="project-slider__slides__slide">
-            <img class="project-slider__slides__slide__image" src="${slide.imageUrl}" alt="">
-            <h6 class="project-slider__slides__slide__title">${slide.title}</h6>
+        <div data-index="${index}" class="header-slider__slides__slide">
+            <img class="header-slider__slides__slide__image" src="${slide.imageUrl}" alt="">
+            <h6 class="header-slider__slides__slide__title">${slide.title}</h6>
         </div>
     `;
 
@@ -53,8 +53,8 @@ const activeElementSelector = ()=>{
         const element = slideList.children[i]
         if(element.getAttribute("data-index") <= currentElementIndex){
             element.classList.add("active")
-            currentTitleElement.innerHTML = projects[i].title
-            currentDescriptionElement.innerHTML = projects[i].description
+            currentTitleElement.innerHTML = slides[i].title
+            currentDescriptionElement.innerHTML = slides[i].description
         }else {
             element.classList.remove("active")
         }     
@@ -63,11 +63,11 @@ const activeElementSelector = ()=>{
 
 
 
-slideWriter(projects)
+slideWriter(slides)
 activeElementSelector()
 
 const nextSlide = ()=> {
-    if(currentElementIndex < projects.length-1){
+    if(currentElementIndex < slides.length-1){
         currentElementIndex += 1
         activeElementSelector()
     }
