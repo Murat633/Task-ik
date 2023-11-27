@@ -73,6 +73,7 @@
   background-image: url(../../sources/images/header-bg.png);
   background-size: cover;
   background-position: center;
+  transition: all 1s;
 }
 .header__content-slider__controller {
   display: flex;
@@ -93,12 +94,15 @@
   height: 100%;
 }
 .header__content-slider__slide__content {
-  display: flex;
+  display: none;
   padding: 1rem 0;
   flex-direction: column;
   justify-content: space-between;
   gap: 1rem;
   width: 30%;
+}
+.header__content-slider__slide__content.active {
+  display: flex;
 }
 .header__content-slider__slide__content__title {
   word-break: keep-all;
@@ -140,13 +144,14 @@
     gap: 1rem;
     padding: 0 2rem;
     width: 100%;
-    overflow: hidden;
     height: 0;
+    overflow: hidden;
     transition: all 0.3s;
   }
   .header__navbar__navigation.active {
     transition: all 0.3s;
-    height: 25rem;
+    height: 23rem;
+    z-index: 999 !important;
   }
   .header__navbar__navigation__links {
     width: 100%;
@@ -158,7 +163,7 @@
   .header__navbar__navigation__links__link {
     color: #fff;
     padding: 1rem 2rem;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
   }
   .header__navbar__navigation__language {
     display: flex;
@@ -176,9 +181,10 @@
     color: #fff;
   }
 }
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
   .header {
-    height: 4.8rem;
+    height: 45rem;
+    margin-bottom: 1rem;
   }
   .header::after {
     content: "";
@@ -194,7 +200,7 @@
   .header__content-slider {
     padding: 0rem;
     width: 100;
-    height: 4rem;
+    height: 40rem;
     margin: 0;
     background: #000;
     background-image: url(../../sources/images/header-bg.png);
@@ -212,6 +218,9 @@
   }
   .header__content-slider__slide__content__title {
     margin-bottom: 0;
+  }
+  .header__content-slider__slide__content.active__title {
+    color: #fff;
   }
   .header__content-slider__slide__content__button {
     display: inline-block;
@@ -421,7 +430,7 @@
     }
   }
   .project-slider__slides__slide {
-    min-width: 15rem;
+    min-width: 25rem;
     height: 25rem;
   }
   .project-slider__current-slide-image-box {
